@@ -22,13 +22,12 @@ Syntax highlighted code block
 
 # Header 1
 ## Header 2
-### Header 3
 
 - Bulleted
-- List
+- Lis
 
 1. Numbered
-2. List
+2. Lis
 
 **Bold** and _Italic_ and `Code` text
 
