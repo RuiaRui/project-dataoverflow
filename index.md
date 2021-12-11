@@ -24,6 +24,8 @@ In order to determine whether a certain speaker is from a 'Western' background, 
 
 ### Which topics are associated with China by western press
 
+{% include topic_chase.html %}
+
 ### How do Western speakers feel about the topics presented in the Western press
 
 ### How do different groups of people feel about China
