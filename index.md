@@ -23,4 +23,7 @@ In order to determine whether a certain speaker is from a 'Western' background, 
 
 ### How do Western speakers feel about the topics presented in the Western press
 
+When we look at the various topics we saw the general trend that a lot of news seems to focus on the negative things that are associated in China. As an example one may take the Hong Kong protests which in itself could be interpreted as a negative event related to China. However, is it also the case that the quotations about these topics carry a negative connotation towards China?
+In this section we will explore the opinion of Western speakers regarding the main topics presented in the previous section.
+
 ### How do different groups of people feel about China
