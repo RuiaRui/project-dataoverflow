@@ -5,13 +5,6 @@ subtitle: Balabalabala
 ---
 
 
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/RuiaRui/test/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown 
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-
 ### The data
 
 The [Quotebank](https://zenodo.org/record/4277311#.YbN3I32ZNO8) data-set we use contains english quotations gathered from online news articles in the period between 2008 and 2020. We filter the data to obtain quotations relating to China which were uttered by a person with a western background as defined by their nationality. 
