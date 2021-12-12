@@ -15,6 +15,8 @@ The data flitering was done by checking whether specific keywords relating to ch
 
 In order to determine whether a certain speaker is from a 'Western' background, we check whether they come from one of the countries in the political definition of [Western countries](https://sashamaps.net/docs/maps/list-of-western-countries/). As mentioned before, after filtering we are left with approximately 2 million article-quotation pairs. \
 
+{% include quotation_distribution.html %}
+
 ### Which topics are associated with China by western press
 
 {% include topic_chase.html %}
