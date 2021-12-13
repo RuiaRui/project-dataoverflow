@@ -19,6 +19,8 @@ Below we see a map of the amount of quotations per country in the western world,
 
 {% include quotation_distribution.html %}
 
+{% include quotation_top5_countries.html %}
+
 ### Which topics are associated with China by western press
 
 {% include topic_chase.html %}
