@@ -26,10 +26,11 @@ Below we see a map of the amount of quotations per country in the western world,
 {% include topic_chase.html %}
 
 ### How do Western speakers feel about the topics presented in the Western press
-{% include topic_overview.html %}
+
 When we look at the various topics we saw the general trend that a lot of news seems to focus on the negative things that are associated in China. As an example one may take the Hong Kong protests which in itself could be interpreted as a negative event related to China. However, is it also the case that the quotations about these topics carry a negative connotation towards China?
 In this section we will explore the opinion of Western speakers regarding the main topics presented in the previous section.
 
 In order to gauge the opinion of Western quotees, we calculated the sentiment index per quotation in the dataset, and aggregate them per topic. Normally, we would not be able to aggregate the quotations per topic, as keywords regarding the same topic may be very different, e.g. 'corona virus' and 'covid-19 outbreak'. The way we deal with this is to train a classifier that classifies keywords into pre-specified topics. We train this classifier by leveraging the fact that each quotation-article pair has a list of 5 keywords. What we do is segment the top 50 most frequent keywords per year into several meaningful categories, we then assume that everything that is in a list with one of the top 50 keywords is related to that keyword topic. We then label all keywords that only occur once in the dataset as outliers if they are unrelated (not in the same list) to the top 50 keywords. We then train the classifier on this labelled data, and let it predict on the keywords that were not labelled in the original 'manual' labelling. 
-
+{% include topic_overview.html %}
+Our manual labelling resulted in the main topics shown above. 
 ### How do different groups of people feel about China
