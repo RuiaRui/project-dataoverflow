@@ -38,6 +38,8 @@ Below we see a map of the number of quotations per country in the western world,
 
 {% include quotation_distribution.html %}
 
+{% include quotation_top5_countries.html %}
+
 ## What are people talking about when they talk about China?
 
 To understand people's attitudes, first we need to understand what they are talking about. And we can figure this out by extracting keywords from quotations. We choose the pre-trained model KeyBERT to extract the five possible bigram keywords for each quotations, and use these five keywords to represent this quotation. After extracting keywords, we can infer what events people are discussing by associating keywords with news events. 
@@ -78,5 +80,6 @@ When we look at the various topics we saw the general trend that a lot of news s
 In this section we will explore the opinion of Western speakers regarding the main topics presented in the previous section.
 
 In order to gauge the opinion of Western quotees, we calculated the sentiment index per quotation in the dataset, and aggregate them per topic. Normally, we would not be able to aggregate the quotations per topic, as keywords regarding the same topic may be very different, e.g. 'corona virus' and 'covid-19 outbreak'. The way we deal with this is to train a classifier that classifies keywords into pre-specified topics. We train this classifier by leveraging the fact that each quotation-article pair has a list of 5 keywords. What we do is segment the top 50 most frequent keywords per year into several meaningful categories, we then assume that everything that is in a list with one of the top 50 keywords is related to that keyword topic. We then label all keywords that only occur once in the dataset as outliers if they are unrelated (not in the same list) to the top 50 keywords. We then train the classifier on this labelled data, and let it predict on the keywords that were not labelled in the original 'manual' labelling. 
-
+{% include topic_overview.html %}
+Our manual labelling resulted in the main topics shown above. 
 ### How do different groups of people feel about China
