@@ -47,7 +47,7 @@ To understand people's attitudes, first we need to understand what they are talk
 We generate a word cloud plot for all the quotations' keyword to show the frenquence of keywords mention in whole dataset of all the years we have.
 
 <!-- ![keyword-World_Cloud.png](images/keyword-World_Cloud.png) -->
-<img src="mages/keyword-World_Cloud.png" alt="word_cloud" width="200" height="350"/>
+<img src="images/keyword-World_Cloud.png" alt="word_cloud" width="200" height="350"/>
 
 Over all year, the most frequently mentioned keywords are:
 
@@ -58,7 +58,7 @@ Over all year, the most frequently mentioned keywords are:
 | 3    | trade war          | 22993  |
 | 4    | hong kong          | 21174  |
 | 5    | trade talks        | 15947  |
-| 6    | china sea          | 15037, |
+| 6    | china sea          | 15037  |
 | 7    | deal china         | 11915  |
 | 8    | trade dea          | 11578  |
 | 9    | chinese government | 10088  |
@@ -69,9 +69,9 @@ Over all year, the most frequently mentioned keywords are:
 | 14   | trump trade        | 5818   |
 | 15   | president xi       | 5727   |
 
-Suprisingly,  'North Korea' is the most frenquently mentioned keyword.  This might because we use bigram word encoding, but also due to the reason that since the change of regime in North Korea in 2011, when Kim Jong-un became leader, and since North Korea has been attempting to conduct missile and nuclear bomb tests from 2013-2017, the country has attracted a lot of attention and discussion in the international world in the intervening years. At the same time, China and North Korea, two of the most talked about socialist countries in close proximity to each other, are widely perceived to be closely linked and supportive of each other, and therefore will eventually refer to China's attitude or moves when talking about North Korea. It is therefore understandable that North Korea appears most frequently as a keyword in China-related quotations. The rest of the keywords: trade war, Hong Kong, China sea,chinese government, human rights, and climate change are more reasonable. The trade war between the United States and China in 2018-early 2020 has been a prominent topic of conversation for years, with multiple meetings between leaders and deals made or not reached being covered and discussed in the press on a regular basis. China's human rights issues and Chinese governing have always been the focus of attention and attack in the Western media. And disputes over China's territorial seas and discussions about climate change have continued to develop in the 2008-2020 era. Although the coronavirus outbreak has been a topic of discussion for everyone for the last two years, the total number of mentions of this keyword in the dataset does not rank high, mainly because the dataset only contains news quotes up to the first half of 2020.
+Suprisingly,  `North Korea` is the most frenquently mentioned keyword.  This might because we use bigram word encoding, but also due to the reason that since the change of regime in North Korea in 2011, when Kim Jong-un became leader, and since North Korea has been attempting to conduct missile and nuclear bomb tests from 2013-2017, the country has attracted a lot of attention and discussion in the international world in the intervening years. At the same time, China and North Korea, two of the most talked about socialist countries in close proximity to each other, are widely perceived to be closely linked and supportive of each other, and therefore will eventually refer to China's attitude or moves when talking about North Korea. It is therefore understandable that North Korea appears most frequently as a keyword in China-related quotations. The rest of the keywords: `trade war`, `Hong Kong`, `China sea`,`chinese government`, `human rights`, and `climate change` are more reasonable. The trade war between the United States and China from 2018 to early 2020 has been a prominent topic of conversation for years, with multiple meetings between leaders and deals made or not reached being covered and discussed in the press on a regular basis. China's human rights issues and Chinese governing have always been the focus of attention and attack in the Western media. And disputes over China's territorial seas and discussions about climate change have continued to develop in the 2008-2020 era. Although the coronavirus outbreak has been a topic of discussion for everyone for the last two years, the total number of mentions of this keyword in the dataset does not rank high, mainly because the dataset only contains news quotes up to the first half of 2020.
 
-Moreover, we create a bar chart race plot to see how the keywords change in time with counting the keyword quarterly. You can see in the plot that the keywords change frequently for the most part, but in some years some topics dominate the entire ranking.During 2017,  the keyword North Korea consistently occupy the top spot on the list, with many more mentions than other topics in the same period. In 2018, keywords related to trade war are at the top of the list.
+Moreover, we create a bar chart race plot to see how the keywords change in time with counting the keyword quarterly. You can see in the plot that the keywords change frequently for the most part, but in some years some topics dominate the entire ranking.During 2017,  the keyword `North Korea` consistently occupy the top spot on the list, with many more mentions than other topics in the same period. In 2018, keywords related to *trade war* are at the top of the list.
 
 {% include topic_chase.html %}
 
