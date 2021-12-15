@@ -28,17 +28,29 @@ The data filtering was done by checking whether specific keywords relating to ch
 
 In order to determine whether a certain speaker is from a 'Western' background, we check whether they come from one of the countries in the political definition of [Western countries](https://sashamaps.net/docs/maps/list-of-western-countries/). As mentioned before, after filtering we are left with approximately 2 million article-quotation pairs.
 
-
-
 #### Overview of the Filtered Data
-
-
 
 Below we see a map of the number of quotations per country in the western world, note that the `QuotationScale` is the logarithm of the number of quotes. As we can see the vast majority of quotes are from the US, with a smaller amount of quotes coming from all other countries. Therefore, when observing the results please take into account that most of the data the investigation is based on are from the US.
 
 {% include quotation_distribution.html %}
 
+📈 The derived dataset we used for analysis consists of 1,954,147 quotes related to China. As shown in the following plot, the number of quotes increases gradually since 2016, reaching a peak of 444,118 in 2019. The subsequent drop is merely due to lack of data in 2020, as only the quotes from the first two quaters were collected in the original dataset.
+
+{% include quotations_per_year.html %}
+
+🌍 Taking a closer look at the geographical distribution of quotes, they are uttered by 81,581 speakers from 58 western countries, with USA, UK, Australia, Canada, and France ranking as top 5 countries with the most quotes. 
+
 {% include quotation_top5_countries.html %}
+
+🗣 Considering the number of quotes uttered by each speaker, the most frequent speaker is Donald Trump with 196,246 quotes about China, followed by Barack Obama who has 79,789 quotes in our dataset!
+
+🚹 🚺 As for gender identities of speakers, male speakers make up 75.8% of the quotees, while female speakers make up 24% of the quotees, after filtering those speakers with multiple gender identities or merely without data. 
+
+{% include speakers_per_gender_identity.html %}
+
+🪧 Regarding polical affiliations, 2,822 speakers are the Democrats (🐎, 🇺🇸) and 2,678 of them are the Republicans (🐘, 🇺🇸). 
+
+{% include speakers_per_party.html %}
 
 ## What are people talking about when they talk about China?
 
