@@ -80,4 +80,5 @@ To gauge the opinion of Western quotees, we calculated the sentiment index per q
 {% include topic_overview.html %}
 Our manual labeling resulted in the main topics shown above. Note that sporadic news is not included in the overview, as we are not able to track these over subsequent years. An example of such a sporadic news story could be when 3 UCLA basketball players were accused of shoplifting in China, and were subsequently detained. Another thing to keep in mind is that the overview, and subsequent analysis assumes that all the important topics of a certain year show up within the top 50 most frequent keywords of that year. 
 {% include topic_sentiment.html %}
+As we can see, the plot shows interesting patterns. If we look at the average sentiment of all the quotations we see that the sentiment drops quite suddenly after 2016.  
 ### How do different groups of people feel about China
