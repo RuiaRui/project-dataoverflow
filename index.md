@@ -96,10 +96,16 @@ Another interresting observation can be made when looking at the trend of the to
 In general, it seems that the sentiment for the extracted topics lie below the zero line, indicating that most topics show a negative sentiment when looking at the aggregated quotes. This is however to be expected, as it is known that people are more attentive to [negative news](https://www.pnas.org/content/116/38/18888#sec-3), this combined with our approach of extracting topics from the top 50 keywords, means that the topics likely contain a larger amount of negative news.
 
 ### How do different groups of people feel about China
+In the previous analyses we have seen that in recent years the sentiment of Western speakers has decreased. Here we would like to present how this decrease in sentiment varies over different groups of speakers in the data-set. To start off, we look at how the sentiment of different countries towards China has changed.
 
+When we look at the two most representative countries in the data-set, the US and the UK, we in both cases observe a downward trend in the sentiment-index. We do however see a big difference in the height of the trend line of the sentiment index. Interestingly, the US seems to be quite a bit more negative in quotations related to China. 
+
+For the rest of the countries, it seems as though they are very similar to the UK in terms of trend line, with the only difference being France. France, in contrast with the others shows a much flatter trend line, indicating that the sentiment has not changed much over the years contained in the data-set.
 {% include country.html %}
 
+The plot below shows the average sentiment per gender. We appologise for the exclusion of gender-variant speakers, but since these only made up 0.2% of the data, we decided to not include them in the plot, as they seem to not be representative of the general Western perspective due to the small number of speakers. However, when looking at the differences between the male and female speakers, the only difference we observe is a small bias towards the positive when looking a female quotees.  
 {% include gender.html %}
+
 
 {% include party.html %}
 
