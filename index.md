@@ -1,6 +1,6 @@
 ---
 layout: index
-title: Data storey
+title: Data story
 subtitle: Balabalabala
 ---
 ## What we are trying to do?
@@ -102,9 +102,8 @@ There are also some differences in sentiment between the different parties. We f
 
 {% include party.html %}
 
-{% include speaker.html %}
+When we look at the plot below, we see an interesting pattern emerge. We can observe that the US congress is much more negative than US non congress members, and even more negative than non-US citizens. This may be the case as debates in congress tend to be more polarized, with parties critisizing each other in how they are handling the diplomatic relations with China. 
 
-When we look at the plot below, we see an interesting pattern emerge. We can observe that the US congress is much more negative than US non-congress members, and even more negative than non-US citizens. This may be the case as debates in congress tend to be more polarized, with parties critisizing each other in how they are handling the diplomatic relations with China. 
 
 Furthermore, here we again observe the general trend where the average sentiment decreases over time, possibly indicating deteriorating relations between the west and China. When looking at the trendline of US congress members this becomes particularly apparent. 
 {% include UScongress.html %}
@@ -115,6 +114,6 @@ We have seen that the western media connects China with a number of main keyword
 
 Further analysis also showed that the main topics the Western media connect with China have a predominantly negative sentiment attached to them. Interestingly though, is that the average sentiment pre-2016 is positive, indicating that in general Western speakers are at least neutral or even positive about China. However, after 2016 we observed the so far unexplained drop in average sentiment of Western speakers. 
 
-Looking at the different groups of people contained in the data-set we observed that.............
+Looking at the different groups of people contained in the data-set we observed that generally, every group of speakers followed a similar trend that showed a decreasing sentiment over the years. However, some of the speaker groups stayed nearly the same over the time perion in the data-set. 
 
 Finally, we can conclude that in general Western public figures seem to have increasingly negative views on China, as shown in contemporary Western media. It remains to be seen whether the deterioration of relations between the West and China will improve in the coming years. We for one suspect that the relations will continue to deteriorate, but hope we are wrong.
