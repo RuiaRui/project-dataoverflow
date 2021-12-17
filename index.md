@@ -54,13 +54,11 @@ Below we see a map of the number of quotations per country in the western world,
 
 ## What are people talking about when they talk about China?
 
-To understand people's attitudes, first, we need to understand what they are talking about. And we can figure this out by extracting keywords from quotations. We choose the pre-trained model KeyBERT to extract the five possible bigram keywords for each quotation and use these five keywords to represent this quotation. After extracting keywords, we can infer what events people are discussing by associating keywords with news events. 
+To understand people's attitudes, first, we need to understand what they are talking about. And we can figure this out by extracting keywords from quotations. We choose the pre-trained model KeyBERT to extract the five possible bigram keywords for each quotation and use these five keywords to represent this quotation. BERT first extract document embeddings to get a document-level representation and then extract word embeddings for N-gram words/phrases. Finally, The cosine similarity is calculated to find the words/phrases that are the most similar to the document. The 5 most similar words could then be identified as the words that best describe the entire document. After extracting keywords, we can infer what events people are discussing by associating keywords with news events. 
 
-We generate a word cloud plot for all the keywords of quoteations to show the frequency of keywords mention in the whole dataset of all the years we have.
-
+We generate a word cloud plot for all the keywords of quotations to show the frequency of keywords mention in the whole dataset of all the years we have.
 
 <img src="images/keyword_word_cloud.png" alt="word_cloud" width="800" height="560"/>
-
 
 Overall year, the most frequently mentioned keywords are:
 
