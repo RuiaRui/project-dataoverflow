@@ -3,7 +3,7 @@ layout: index
 title: Data storey
 subtitle: Balabalabala
 ---
-## What we are trying to do?
+## What we are trying to show?
 
 Quotations are often used as a literary device to represent someone's point of view. We believe that these Quotations used in the news related to China represent the attitudes of Western politicians and, to some extent, of the Western public towards China. By analyzing those Quotations, we hope to answer the question: what are the attitudes of the Western world towards China?
 
@@ -11,14 +11,13 @@ We use keyword filtering to get the related quotations, then apply KeyBERT, a mi
 
 We will present our data story in the following structure:
 
-- ​	[How does our data look like?](#how-does-our-data-look-like-?) 
+- ​	[What does our data look like?](#how-does-our-data-look-like-?) 
 
 - What are people talking about when they talk about China?
 - What are their attitudes?
 - The difference in attitudes?
-- Interesting findings?
 
-## How does our data look like?
+## What does our data look like?
 
 The [Quotebank](https://zenodo.org/record/4277311#.YbN3I32ZNO8) data-set we use contains English quotations gathered from online news articles in the period between 2008 and 2020. We filter the data to obtain quotations relating to China which were uttered by a person with a western background as defined by their nationality. 
 
