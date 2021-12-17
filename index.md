@@ -7,7 +7,7 @@ subtitle: Balabalabala
 
 Quotations are often used as a literary device to represent someone's point of view. We believe that these Quotations used in the news related to China represent the attitudes of Western politicians and, to some extent, of the Western public towards China. By analyzing those Quotations, we hope to answer the question: what are the attitudes of the Western world towards China?
 
-We use keyword filtering to get the related quotations, then apply [KeyBERT](https://github.com/MaartenGr/KeyBERT), a minimal keyword extraction technique, to the quotations and article title to create keywords and key phrases that are most similar to the string itself. We also aggregate keywords into more general topics. Then, we use `Twitter-roBERTa-base` for our sentiment analysis on each quotation and get a sentiment score from -1 ~ 1 to represent the positive/negative scale of the attitude of that quotation. 
+We use keyword filtering to get the related quotations, then apply [KeyBERT](https://github.com/MaartenGr/KeyBERT), a minimal keyword extraction technique, to the quotations and article title to create keywords and key phrases that are most similar to the string itself. We also aggregate keywords into more general topics. Then, we use [`Twitter-roBERTa-base`](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment) for our sentiment analysis on each quotation and get a sentiment score from -1 ~ 1 to represent the positive/negative scale of the attitude of that quotation. 
 
 We will present our data story in the following structure:
 
