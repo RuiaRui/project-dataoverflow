@@ -54,11 +54,13 @@ Below we see a map of the number of quotations per country in the western world,
 
 ## What are people talking about when they talk about China?
 
-To understand people's attitudes, first, we need to understand what they are talking about. And we can figure this out by extracting keywords from quotations. We choose the pre-trained model KeyBERT to extract the five possible bigram keywords for each quotation and use these five keywords to represent this quotation. BERT first extract document embeddings to get a document-level representation and then extract word embeddings for N-gram words/phrases. Finally, The cosine similarity is calculated to find the words/phrases that are the most similar to the document. The 5 most similar words could then be identified as the words that best describe the entire document. After extracting keywords, we can infer what events people are discussing by associating keywords with news events. 
+To understand people's attitudes, first, we need to understand what they are talking about. And we can figure this out by extracting keywords from quotations. We choose the pre-trained model KeyBERT to extract the five possible bigram keywords for each quotation and use these five keywords to represent this quotation. After extracting keywords, we can infer what events people are discussing by associating keywords with news events. 
 
-We generate a word cloud plot for all the keywords of quotations to show the frequency of keywords mention in the whole dataset of all the years we have.
+We generate a word cloud plot for all the keywords of quoteations to show the frequency of keywords mention in the whole dataset of all the years we have.
+
 
 <img src="images/keyword_word_cloud.png" alt="word_cloud" width="800" height="560"/>
+
 
 Overall year, the most frequently mentioned keywords are:
 
@@ -86,18 +88,6 @@ To gauge the opinion of Western quotees, we calculated the sentiment index per q
 Our manual labeling resulted in the main topics shown above. Note that sporadic news is not included in the overview, as we are not able to track these over subsequent years. An example of such a sporadic news story could be when 3 UCLA basketball players were accused of shoplifting in China, and were subsequently detained. Another thing to keep in mind is that the overview, and subsequent analysis assumes that all the important topics of a certain year show up within the top 50 most frequent keywords of that year. 
 {% include topic_sentiment.html %}
 As we can see, the plot shows interesting patterns. If we look at the average sentiment of all the quotations we see that the sentiment drops quite suddenly after 2016. Part of the drop can be explained by some of the classified topics, this can be seen in the fact that the `others` category stays relatively the same in 2017, while the average sentiment index of all the quotations drop. This indicates that the topics that are not in the others category became more negative in 2017. However, after 2017 the `others`category also drops, meaning that there is some unexplained change in the average sentiment of the `others` category. We have not found an explanation for this large change in average sentiment, but a possible explanation may be that news regarding China in general became more negative. 
-
+Another interresting observation can be made when looking at the trend of the topic `trade_relations`. We see that the sentiment jumps up in 2014, which coincides with the [China–Australia Free Trade Agreement](https://en.wikipedia.org/wiki/China%E2%80%93Australia_Free_Trade_Agreement). Furthermore, in 2014 the second most commonly quoted quote relating to `trade_relations` was that of Former Democratic Sen. Max Baucus which stated `*no bilateral relationship is more important than the U.S. and China's*`. However, in later years, we see the sentiment drop to neutral, and even later to negative as the [US-China trade war](https://en.wikipedia.org/wiki/China%E2%80%93United_States_trade_war) began. However, in 2020 we see a large uptick in the sentiment index relating to the topic `trade_relations`, this uptick in sentiment happened after the signing of the phase one US-China trade agreement on January 15th 2020. The impact of this trade agreement on the sentiment index can be seen in the fact that before January 15th, the average `trade_relations` sentiment was -0.08, while afterwards it changed to +0.09. 
 
 ### How do different groups of people feel about China
-
-{% include country.html %}
-
-{% include gender.html %}
-
-{% include party.html %}
-
-{% include religion.html %}
-
-{% include speaker.html %}
-
-{% include UScongress.html %}
