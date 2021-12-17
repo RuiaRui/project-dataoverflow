@@ -59,7 +59,7 @@ To understand people's attitudes, first, we need to understand what they are tal
 We generate a word cloud plot for all the keywords of quoteations to show the frequency of keywords mention in the whole dataset of all the years we have.
 
 <!-- ![keyword-World_Cloud.png](images/keyword-World_Cloud.png) -->
-<img src="images/keyword_word_cloud.png" alt="word_cloud" width="800" height="560" position="center"  margin=“auto”/>
+<img src="images/keyword_word_cloud.png" alt="word_cloud" width="800" height="560" position="center"  margin="auto"/>
 
 Overall year, the most frequently mentioned keywords are:
 
@@ -70,6 +70,12 @@ Surprisingly,  `North Korea` is the most frequently mentioned keyword.  This mig
 Moreover, we create a bar chart race plot to see how the keywords change in time by counting the keyword quarterly. You can see in the plot that the keywords change frequently for the most part, but in some years some topics dominate the entire ranking. During 2017,  the keyword `North Korea` consistently occupy the top spot on the list, with many more mentions than other topics in the same period. In 2018, keywords related to *trade war* are at the top of the list.
 
 {% include topic_chase.html %}
+
+For the top 5 countries with the most quotes: USA, UK, Australia, Canada, and France, we can also take a look of what these countries' most mentioned keywords.
+
+{% include keywords_countries.html %}
+
+As can be seen, the mentioned keywords vary between countries. The United States is fairly representative, mainly because most of the quotations come from US speakers. UK has some quotations about 5g and HUAWEI since HUAWEI tried to install the 5g equipment and then the UK banned it. Australia and China used to be closed before 2017 but the relations began to deteriorate because of their different stances on the South China Sea dispute, which may be the reason why the keywords `Australia China/ china Australia ` and `China sea` show up. The top 4 out of 5 mentioned keywords for Canadian speakers are related to the so-called two Michaels being detained, which is widely considered a retaliatory action after the Chinese tech executive Meng Wanzhou was arrested in Vancouver. Interestingly, France is the most concerned about economic topics out of the five countries.
 
 ### How do Western speakers feel about the topics presented in the Western press
 
