@@ -52,7 +52,7 @@ To understand people's attitudes, first, we need to understand what they are tal
 We generate a word cloud plot for all the keywords of quoteations to show the frequency of keywords mention in the whole dataset of all the years we have.
 
 
-<img src="images/keyword_word_cloud.png" alt="word_cloud" width="800" height="560"/>
+{% include word_cloud.html %}
 
 
 Overall year, the most frequently mentioned keywords are:
