@@ -44,8 +44,6 @@ Below we see a map of the number of quotations per country in the western world,
 
 🗣 Considering the number of quotes uttered by each speaker, the most frequent speaker is Donald Trump with 196,246 quotes about China, followed by Barack Obama who has 79,789 quotes in our dataset!
 
-{% include quotation_top10_speakers.html %}
-
 🚹 🚺 As for gender identities of speakers, male speakers make up 75.8% of the quotees, while female speakers make up 24% of the quotees, after filtering those speakers with multiple gender identities or merely without data. 
 
 {% include speakers_per_gender_identity.html %}
@@ -92,5 +90,7 @@ Our manual labeling resulted in the main topics shown above. Note that sporadic 
 As we can see, the plot shows interesting patterns. If we look at the average sentiment of all the quotations we see that the sentiment drops quite suddenly after 2016. Part of the drop can be explained by some of the classified topics, this can be seen in the fact that the `others` category stays relatively the same in 2017, while the average sentiment index of all the quotations drop. This indicates that the topics that are not in the others category became more negative in 2017. However, after 2017 the `others`category also drops, meaning that there is some unexplained change in the average sentiment of the `others` category. We have not found an explanation for this large change in average sentiment, but a possible explanation may be that news regarding China in general became more negative. 
 
 Another interresting observation can be made when looking at the trend of the topic `trade_relations`. We see that the sentiment jumps up in 2014, which coincides with the [China–Australia Free Trade Agreement](https://en.wikipedia.org/wiki/China%E2%80%93Australia_Free_Trade_Agreement). Furthermore, in 2014 the second most commonly quoted quote relating to `trade_relations` was that of Former Democratic Sen. Max Baucus which stated *no bilateral relationship is more important than the U.S. and China's*. However, in later years, we see the sentiment drop to neutral, and even later to negative as the [US-China trade war](https://en.wikipedia.org/wiki/China%E2%80%93United_States_trade_war) began. However, in 2020 we see a large uptick in the sentiment index relating to the topic `trade_relations`, this uptick in sentiment happened after the signing of the phase one US-China trade agreement on January 15th 2020. The impact of this trade agreement on the sentiment index can be seen in the fact that before January 15th, the average `trade_relations` sentiment was -0.08, while afterwards it changed to +0.09. We confirmed this change in sentiment with a independent samples t-test, which reached statistical significance. 
+
+In general, it seems that the sentiment for the extracted topics lie below the zero line, indicating that most topics show a negative sentiment when looking at the aggregated quotes. This is however to be expected, as it is known that people are more attentive to [negative news](https://www.pnas.org/content/116/38/18888#sec-3), this combined with our approach of extractign topics from the top 50 keywords, means that the topics likely contain a larger amount of negative news.
 
 ### How do different groups of people feel about China
