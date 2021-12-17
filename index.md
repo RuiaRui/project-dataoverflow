@@ -5,11 +5,11 @@ subtitle: Balabalabala
 ---
 ## What we are trying to do?
 
-Quotations are often used as a literary device to represent someone's point of view. We believe that these Quotations used in the news related to China represent the attitudes of Western politicians and, to some extent, of the Western public towards China. By analyzing those Quotations, we hope to answer the question: what are the attitudes of the Western world towards China?
+Quotations are often used to represent someone's point of view. We believe that these Quotations used in the news related to China represent the attitudes of Western politicians and, to some extent, the Western public, towards China. By analyzing those Quotations, we hope to answer the question: what are the attitudes of the Western world towards China?
 
 We use keyword filtering to get the related quotations, then apply [KeyBERT](https://github.com/MaartenGr/KeyBERT), a minimal keyword extraction technique, to the quotations and article title to create keywords and key phrases that are most similar to the string itself. We also aggregate keywords into more general topics. Then, we use [`Twitter-roBERTa-base`](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment) for our sentiment analysis on each quotation and get a sentiment score from -1 ~ 1 to represent the positive/negative scale of the attitude of that quotation. 
 
-## How does our data look like?
+## What does our data look like?
 
 The [Quotebank](https://zenodo.org/record/4277311#.YbN3I32ZNO8) data-set we use contains English quotations gathered from online news articles in the period between 2008 and 2020. We filter the data to obtain quotations relating to China which were uttered by a person with a western background as defined by their nationality. 
 
@@ -41,13 +41,13 @@ Below we see a map of the number of quotations per country in the western world,
 
 {% include speakers_per_gender_identity.html %}
 
-🪧 Regarding polical affiliations, 2,822 speakers are the Democrats (🐎, 🇺🇸) and 2,678 of them are the Republicans (🐘, 🇺🇸). 
+🪧 Regarding polical affiliations, 2,822 speakers are Democrats (🐎, 🇺🇸) and 2,678 of them are Republican (🐘, 🇺🇸). 
 
 {% include speakers_per_party.html %}
 
 ## What are people talking about when they talk about China?
 
-To understand people's attitudes, first, we need to understand what they are talking about. And we can figure this out by extracting keywords from quotations. We choose the pre-trained model KeyBERT to extract the five possible bigram keywords for each quotation and use these five keywords to represent this quotation. After extracting keywords, we can infer what events people are discussing by associating keywords with news events. 
+To understand people's attitudes, first, we need to understand what they are talking about. We can figure this out by extracting keywords from quotations. We choose the pre-trained model KeyBERT to extract the five possible bigram keywords for each quotation and use these five keywords to represent this quotation. After extracting keywords, we can infer what events people discuss by associating keywords with news events. 
 
 We generate a word cloud plot for all the keywords of quoteations to show the frequency of keywords mention in the whole dataset of all the years we have.
 
