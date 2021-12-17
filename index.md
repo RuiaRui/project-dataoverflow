@@ -100,8 +100,6 @@ The plot below shows the average sentiment per gender. We appologise for the exc
 
 {% include party.html %}
 
-{% include speaker.html %}
-
 When we look at the plot below, we see an interesting pattern emerge. We can observe that the US congress is much more negative than US non congress members, and even more negative than non-US citizens. This may be the case as debates in congress tend to be more polarized, with parties critisizing each other in how they are handling the diplomatic relations with China. 
 
 Furthermore, here we again observe the general trend where the average sentiment decreases over time, possibly indicating deteriorating relations between the west and China. When looking at the trendline of US congress members this becomes particularly apparent. 
