@@ -91,3 +91,15 @@ As we can see, the plot shows interesting patterns. If we look at the average se
 
 
 ### How do different groups of people feel about China
+
+{% include country.html %}
+
+{% include gender.html %}
+
+{% include party.html %}
+
+{% include religion.html %}
+
+{% include speaker.html %}
+
+{% include UScongress.html %}
