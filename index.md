@@ -44,7 +44,7 @@ Below we see a map of the number of quotations per country in the western world,
 
 🗣 Considering the number of quotes uttered by each speaker, the most frequent speaker is Donald Trump with 196,246 quotes about China, followed by Barack Obama who has 79,789 quotes in our dataset!
 
-{% include quotation_top10_speaker.html %}
+{% include quotation_top10_speakers.html %}
 
 🚹 🚺 As for gender identities of speakers, male speakers make up 75.8% of the quotees, while female speakers make up 24% of the quotees, after filtering those speakers with multiple gender identities or merely without data. 
 
