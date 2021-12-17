@@ -3,7 +3,7 @@ layout: index
 title: Data storey
 subtitle: Balabalabala
 ---
-## What we are trying to show?
+## What we are trying to do?
 
 Quotations are often used as a literary device to represent someone's point of view. We believe that these Quotations used in the news related to China represent the attitudes of Western politicians and, to some extent, of the Western public towards China. By analyzing those Quotations, we hope to answer the question: what are the attitudes of the Western world towards China?
 
@@ -11,13 +11,14 @@ We use keyword filtering to get the related quotations, then apply KeyBERT, a mi
 
 We will present our data story in the following structure:
 
-- ​	[What does our data look like?](#how-does-our-data-look-like-?) 
+- ​	[How does our data look like?](#how-does-our-data-look-like-?) 
 
 - What are people talking about when they talk about China?
 - What are their attitudes?
 - The difference in attitudes?
+- Interesting findings?
 
-## What does our data look like?
+## How does our data look like?
 
 The [Quotebank](https://zenodo.org/record/4277311#.YbN3I32ZNO8) data-set we use contains English quotations gathered from online news articles in the period between 2008 and 2020. We filter the data to obtain quotations relating to China which were uttered by a person with a western background as defined by their nationality. 
 
@@ -95,3 +96,15 @@ Another interresting observation can be made when looking at the trend of the to
 In general, it seems that the sentiment for the extracted topics lie below the zero line, indicating that most topics show a negative sentiment when looking at the aggregated quotes. This is however to be expected, as it is known that people are more attentive to [negative news](https://www.pnas.org/content/116/38/18888#sec-3), this combined with our approach of extracting topics from the top 50 keywords, means that the topics likely contain a larger amount of negative news.
 
 ### How do different groups of people feel about China
+
+{% include country.html %}
+
+{% include gender.html %}
+
+{% include party.html %}
+
+{% include religion.html %}
+
+{% include speaker.html %}
+
+{% include UScongress.html %}
