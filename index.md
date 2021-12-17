@@ -111,10 +111,11 @@ The plot below shows the average sentiment per gender. We appologise for the exc
 
 {% include speaker.html %}
 
-{% include UScongress.html %}
-When we look at the plot above, we see an interesting pattern emerging. We can observe that the US congress is much more negative than US non congress members, and even more negative than non-US citizens. This may be the case as debates in congress tend to be more polarized, with parties critisizing each other in how they are handling the diplomatic relations with China. 
+When we look at the plot below, we see an interesting pattern emerging. We can observe that the US congress is much more negative than US non congress members, and even more negative than non-US citizens. This may be the case as debates in congress tend to be more polarized, with parties critisizing each other in how they are handling the diplomatic relations with China. 
 
 Furthermore, here we again observe the general trend where the average sentiment decreases over time, possibly indicating deteriorating relations between the west and China. When looking at the trendline of US congress members this becomes particularly apparent. 
+{% include UScongress.html %}
+
 
 ### How does the West view China?
 We have seen that the western media connects China with a number of main keywords. With the most frequent being related to North Korea, and trade relations. It also seems that the main keywords related to China are quite homogeneous among different Western countries, as the most mentioned keywords seem to strongly overlap between countries. 
