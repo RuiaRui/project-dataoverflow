@@ -9,15 +9,6 @@ Quotations are often used as a literary device to represent someone's point of v
 
 We use keyword filtering to get the related quotations, then apply [KeyBERT](https://github.com/MaartenGr/KeyBERT), a minimal keyword extraction technique, to the quotations and article title to create keywords and key phrases that are most similar to the string itself. We also aggregate keywords into more general topics. Then, we use [`Twitter-roBERTa-base`](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment) for our sentiment analysis on each quotation and get a sentiment score from -1 ~ 1 to represent the positive/negative scale of the attitude of that quotation. 
 
-We will present our data story in the following structure:
-
-- ​	[How does our data look like?](#how-does-our-data-look-like-?) 
-
-- What are people talking about when they talk about China?
-- What are their attitudes?
-- The difference in attitudes?
-- Interesting findings?
-
 ## How does our data look like?
 
 The [Quotebank](https://zenodo.org/record/4277311#.YbN3I32ZNO8) data-set we use contains English quotations gathered from online news articles in the period between 2008 and 2020. We filter the data to obtain quotations relating to China which were uttered by a person with a western background as defined by their nationality. 
